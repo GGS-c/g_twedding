@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | VAVI Studios</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <a href="index.html">VAVI <span>STUDIOS</span></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- SLIDER HEADER -->
+ <div class="page-header" id="gallery-header">
+
+    <div class="header-slider">
+        <div class="header-slide active" style="background-image: url('images/sample1.jpg');"></div>
+        <div class="header-slide" style="background-image: url('images/sample2.webp');"></div>
+        <div class="header-slide" style="background-image: url('images/sample3.avif');"></div>
+        <div class="header-slide" style="background-image: url('images/sample4.jpeg');"></div>
+    </div>
+
+    <div class="overlay"></div>
+    <h1>Gallery</h1>
+
+</div>
+
+    <!-- GALLERY -->
+    <main>
+        <div class="matrix-grid">
+
+            <div class="matrix-item"><img src="images/sample1.jpg" onclick="openLightbox(0)"></div>
+            <div class="matrix-item"><img src="images/sample2.webp" onclick="openLightbox(1)"></div>
+            <div class="matrix-item"><img src="images/sample3.avif" onclick="openLightbox(2)"></div>
+            <div class="matrix-item"><img src="images/sample4.jpeg" onclick="openLightbox(3)"></div>
+            <div class="matrix-item"><img src="images/sample5.jpg" onclick="openLightbox(4)"></div>
+            <div class="matrix-item"><img src="images/sample6.jpeg" onclick="openLightbox(5)"></div>
+            <div class="matrix-item"><img src="images/sample7.jpg" onclick="openLightbox(6)"></div>
+            <div class="matrix-item"><img src="images/sample8.jpeg" onclick="openLightbox(7)"></div>
+            <div class="matrix-item"><img src="images/sample9.avif" onclick="openLightbox(8)"></div>
+            <div class="matrix-item"><img src="images/sample10.avif" onclick="openLightbox(9)"></div>
+            <div class="matrix-item"><img src="images/sample8.webp" onclick="openLightbox(10)"></div>
+            <div class="matrix-item"><img src="images/sample1.jpg" onclick="openLightbox(11)"></div>
+             <div class="matrix-item"><img src="images/sample1.jpg" onclick="openLightbox(11)"></div>
+              <div class="matrix-item"><img src="images/sample1.jpg" onclick="openLightbox(11)"></div>
+               <div class="matrix-item"><img src="images/sample1.jpg" onclick="openLightbox(11)"></div>
+
+        </div>
+    </main>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">×</span>
+        <div id="lightbox-img"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 G&T Studios | All Rights Reserved</p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
